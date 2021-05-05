@@ -10,6 +10,7 @@ app.use(bodyParser.json());
 app.use('/', require('./routes/pages'));
 
 
-app.listen(7000, () => {
+port = process.env.port || 3000
+app.listen(port, () => {
   console.log("Network node started");
 })
